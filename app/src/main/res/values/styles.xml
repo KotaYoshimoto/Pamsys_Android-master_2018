@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Table Theme on ServiceInformationSetting -->
+    <style name="TableTextBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <!--<item name="android:layout_marginTop">10dp</item>-->
+        <!--<item name="android:layout_marginBottom">10dp</item>-->
+        <item name="android:layout_margin">1px</item>
+        <item name="android:textSize">50dp</item><!--50dp-->
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="TableTitle" parent="TableTextBase">
+        <item name="android:background">#1e90ff</item>
+    </style>
+    <style name="TableEven" parent="TableTextBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#add8e6</item>
+    </style>
+    <style name="TableOdd" parent="TableTextBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#6495ed</item>
+    </style>
+    <style name="TableContent" parent="TableTextBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+
+    <!-- Button -->
+    <style name="ButtonBase">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textSize">40dp</item>
+    </style>
+    <style name="AlartButton" parent="ButtonBase">
+        <item name="android:background">#ffff00</item>
+    </style>
+
+    <!-- PassengerManagement ... Activitys -->
+    <style name="ServiceInformationTextViews">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="EntrainningTable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:layout_margin">2px</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="EntrainningTableTextView" parent="EntrainningTable">
+        <item name="android:textSize">35dp</item>
+        <item name="android:background">#98fb98</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="PassengerCountTableTextView" parent="EntrainningTable">
+        <item name="android:textSize">35dp</item>
+        <item name="android:background">#ffc0cb</item>
+        <item name="android:focusable">false</item>
+    </style>
+    <style name="EntrainningTableEditText" parent="EntrainningTable">
+        <item name="android:textSize">40dp</item>
+        <item name="android:hint">0</item>
+        <item name="android:inputType">numberDecimal|phone</item>
+        <item name="android:background">#ffffffff</item>
+        <item name="android:selectAllOnFocus">true</item>
+    </style>
+
+    <!-- reservationtable_design.xml -->
+    <style name="ReservationTableDesignTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:layout_margin">1pt</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <!-- AnFinishedServiceResultActivity -->
+    <style name="AnFinishedServiceResultTableBase">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">1px</item>
+        <item name="android:textSize">35dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:paddingLeft">60dp</item>
+        <item name="android:paddingRight">60dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="AnFinishedServiceResultTableTitle" parent="AnFinishedServiceResultTableBase">
+        <item name="android:textSize">40dp</item>
+        <item name="android:background">#1e90ff</item>
+    </style>
+    <style name="AnFinishedServiceResultTableEven" parent="AnFinishedServiceResultTableBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#add8e6</item>
+    </style>
+    <style name="AnFinishedServiceResultTableOdd" parent="AnFinishedServiceResultTableBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#6495ed</item>
+    </style>
+    <style name="AnFinishedServiceResultTableEditText" parent="AnFinishedServiceResultTableBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#ffffff</item>
+    </style>
+    <style name="AnFinishedServiceResultTableTotal" parent="AnFinishedServiceResultTableBase">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#FFFF00</item>
+    </style>
+
+    <!-- DriverRecordsActivity -->
+    <style name="DriverRecordsTableTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">35dp</item>
+    </style>
+</resources>

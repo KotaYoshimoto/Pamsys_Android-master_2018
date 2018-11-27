@@ -1,0 +1,113 @@
+{
+    "route":{
+      "name":"大河内線",
+      "serviceType":"上り",
+      "carType":"デマンド",
+      "courseNumber":"1",
+      "routeNumber":"1",
+      "isServiceWork":"true",
+      "startTime":"10:20:30:30",
+      "busStopList": [
+          {
+            "name":"JR伊予吉田駅",
+            "kanaName":"ジェーアールイヨヨシダエキ",
+            "longitude": 0,
+            "latitude": 0
+          },
+          {
+            "name":"吉田郵便局",
+            "kanaName":"ヨシダユウビンキョク",
+            "longitude": 0,
+            "latitude": 0
+          },
+          {
+            "name":"吉田支所",
+            "kanaName":"ヨシダシショ",
+            "longitude": 0,
+            "latitude": 0
+          },
+          {
+            "name":"吉田病院前",
+            "kanaName":"ヨシダビョウインマエ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"水谷病院前",
+            "kanaName":"ミズタニビョウインマエ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"医王寺下",
+            "kanaName":"イオウジシタ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"立間小学校前",
+            "kanaName":"タチマショウガッコウマエ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"大乗寺前",
+            "kanaName":"ダイジョウジマエ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"白井谷",
+            "kanaName":"シライダニ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"天神橋",
+            "kanaName":"テンジンバシ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"柏木",
+            "kanaName":"カシワギ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"八反代",
+            "kanaName":"ヤエシロ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"西谷",
+            "kanaName":"ニシタニ",
+            "longitude":0,
+            "latitude":0
+          },
+          {
+            "name":"大河内",
+            "kanaName":"オオコウチ",
+            "longitude":0,
+            "latitude":0
+          }
+        ]
+    },
+    "reservations":[
+        {
+          "passengerID":10001,
+          "passengerName":"井上　竜太郎",
+          "getOnBusStop":"JR伊予吉田駅",
+          "getOffBusStop":"大河内",
+          "note":"備考欄"
+        },
+        {
+          "passengerID":10002,
+          "passengerName":"山口晃右",
+          "getOnBusStop":"吉田郵便局",
+          "getOffBusStop":"大河内",
+          "note":"備考欄"
+        }
+      ]
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.yamaguchi.pamsys.CouponTicketSaleActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="販売した回数券の「回数券種別」と「回数券番号」を入力してください．"
+        android:textSize="35dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000">
+
+        <TableRow>
+
+            <TextView
+                style="@style/TableEven"
+                android:layout_weight="1"
+                android:text="回数券種別" />
+
+            <TextView
+                style="@style/TableEven"
+                android:layout_weight="1"
+                android:text="回数券番号" />
+        </TableRow>
+
+
+        <include
+            android:id="@+id/couponTicketSoldInformation_row1"
+            layout="@layout/couponticketsale_design" />
+
+
+        <include
+            android:id="@+id/couponTicketSoldInformation_row2"
+            layout="@layout/couponticketsale_design" />
+
+        <include
+            android:id="@+id/couponTicketSoldInformation_row3"
+            layout="@layout/couponticketsale_design" />
+
+        <include
+            android:id="@+id/couponTicketSoldInformation_row4"
+            layout="@layout/couponticketsale_design" />
+
+        <include
+            android:id="@+id/couponTicketSoldInformation_row5"
+            layout="@layout/couponticketsale_design" />
+
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/ButtonBase"
+            android:text="戻る"
+            android:textSize="40dp"
+            android:layout_width="300dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/confirmButton"
+            style="@style/ButtonBase"
+            android:text="確認"
+            android:textSize="40dp"
+            android:layout_width="300dp"/>
+
+    </LinearLayout>
+</LinearLayout>

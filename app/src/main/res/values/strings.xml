@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Pamsys</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- フォルダ関係 -->
+    <string name="download">DownLoad</string>
+    <string name="service_information_masterdata">ServiceInformationMasterData.json</string>
+    <string name="reservations">Reservations</string>
+    <string name="upload">UpLoad</string>
+    <string name="previous">Previous</string>
+    <string name="current">Current</string>
+    <string name="previous_service_information">PreviousServiceInformation.json</string>
+    <string name="service_information">ServiceInformation.json</string>
+
+    <!-- URL関係 -->
+    <string name="server_name">http://pbl.ict.ehime-u.ac.jp/pamsys_2018/</string>
+    <!--<string name="server_name">http://pblict.city.uwajima.ehime.jp/</string>-->
+    <string name="server_master_data">admin/masterdata_FromWebToAndroid/ServiceInformationMasterData.json</string>
+    <string name="server_reservation_data">admin/reservation/</string>
+    <string name="server_upload">admin/php/getPOSTfromAndroid_edit.php</string>
+    <string name="server_reseration_confirm">admin/php/ReservConfirm.php</string>
+
+    <!-- アナウンス関係 -->
+    <string name="serif01">次は　</string>
+    <string name="serif02">に止まります．</string>
+    
+    <!-- テスト用データ関係 -->
+    <string name="assets_path"></string>
+
+    <!-- 設定 -->
+    <string name="current_course_num">current_course_num</string>
+    <string name="current_busstop_num">current_busstop_num</string>
+    <string name="current_car_type">current_car_type</string>
+    <string name="later_reservation_download">later_reservation_download</string>
+    <string name="pre_busstop_num">pre_busstop_num</string>
+
+    <!-- 乗降者数一時保存 -->
+
+</resources>

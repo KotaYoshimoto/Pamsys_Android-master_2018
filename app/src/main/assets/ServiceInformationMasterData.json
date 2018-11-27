@@ -1,0 +1,465 @@
+{
+  "numberplates": [
+    "愛媛300ふ2579",
+    "愛媛300ね8082"
+  ],
+  "driverNames": [
+    "愛媛　太郎",
+    "宇和島　次郎",
+    "吉田　三郎"
+  ],
+  "courses": [
+    {
+      "name": "A",
+      "serviceNumber": "1",
+      "routeList": [
+        {
+          "name": "大河内線",
+          "serviceType": "上り",
+          "carType": "定期",
+          "courseNumber": "1",
+          "routeNumber": "1",
+          "isServiceWork": "true",
+          "startTime": "10:20:30:30",
+          "busStopList": [
+            {
+              "name": "JR伊予吉田駅",
+              "kanaName": "ジェーアールイヨヨシダエキ",
+              "longitude": 33.273252,
+              "latitude": 132.544083
+            },
+            {
+              "name": "吉田郵便局",
+              "kanaName": "ヨシダユウビンキョク",
+              "longitude": 33.275865,
+              "latitude": 132.541805
+            },
+            {
+              "name": "吉田支所",
+              "kanaName": "ヨシダシショ",
+              "longitude": 33.279856,
+              "latitude": 132.540676
+            },
+            {
+              "name": "吉田病院前",
+              "kanaName": "ヨシダビョウインマエ",
+              "longitude": 33.282362,
+              "latitude": 132.540538
+            },
+            {
+              "name": "水谷病院前",
+              "kanaName": "ミズタニビョウインマエ",
+              "longitude": 33.287134,
+              "latitude": 132.541927
+            },
+            {
+              "name": "医王寺下",
+              "kanaName": "イオウジシタ",
+              "longitude": 33.289447,
+              "latitude": 132.542029
+            },
+            {
+              "name": "立間小学校前",
+              "kanaName": "タチマショウガッコウマエ",
+              "longitude": 33.291229,
+              "latitude": 132.543004
+            },
+            {
+              "name": "大乗寺前",
+              "kanaName": "ダイジョウジマエ",
+              "longitude": 33.292439,
+              "latitude": 132.547960
+            },
+            {
+              "name": "白井谷",
+              "kanaName": "シライダニ",
+              "longitude": 33.294001,
+              "latitude": 132.550183
+            },
+            {
+              "name": "天神橋",
+              "kanaName": "テンジンバシ",
+              "longitude": 33.297615,
+              "latitude": 132.554394
+            },
+            {
+              "name": "柏木",
+              "kanaName": "カシワギ",
+              "longitude": 33.300037,
+              "latitude": 132.556764
+            },
+            {
+              "name": "八反代",
+              "kanaName": "ヤエシロ",
+              "longitude": 33.308838,
+              "latitude": 132.560278
+            },
+            {
+              "name": "西谷",
+              "kanaName": "ニシタニ",
+              "longitude": 33.308838,
+              "latitude": 132.560747
+            },
+            {
+              "name": "大河内",
+              "kanaName": "オオコウチ",
+              "longitude": 33.312767,
+              "latitude": 132.564905
+            }
+          ]
+        },
+        {
+          "name": "中浦線",
+          "serviceType": "上り",
+          "carType": "デマンド",
+          "courseNumber": "2",
+          "routeNumber": "2",
+          "isServiceWork": "true",
+          "startTime": "7:00:00:00",
+          "busStopList": [
+            {
+              "name": "JR伊予吉田駅",
+              "kanaName": "ジェーアールイヨヨシダエキ",
+              "longitude": 33.273252,
+              "latitude": 132.544083
+            },
+            {
+              "name": "吉田郵便局",
+              "kanaName": "ヨシダユウビンキョク",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田支所",
+              "kanaName": "ヨシダシショ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田病院前",
+              "kanaName": "ヨシダビョウインマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田公園入口",
+              "kanaName": "ヨシダコウエンイリグチ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田中学校前",
+              "kanaName": "ヨシダチュウガッコウマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "鳥首口",
+              "kanaName": "トリクビグチ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "八幡下",
+              "kanaName": "ヤワタシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "喜佐方農協前",
+              "kanaName": "キサカタノウキョウマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "長畑",
+              "kanaName": "ナガハタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "検校谷",
+              "kanaName": "ケンコウダニ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "大楽寺下",
+              "kanaName": "ダイラクジシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "河内下",
+              "kanaName": "カワウチシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "堂の下",
+              "kanaName": "ドウノシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "葱代出荷場前",
+              "kanaName": "ソウダイシュッカバマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "貝の浦",
+              "kanaName": "カイノウラ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "堀切",
+              "kanaName": "ホリキリ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "奥の谷",
+              "kanaName": "オクノタニ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "中浦集会所前",
+              "kanaName": "ナカウラシュウカイジョマエ",
+              "longitude": 0,
+              "latitude": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B",
+      "serviceNumber": "2",
+      "routeList": [
+        {
+          "name": "大河内線",
+          "serviceType": "上り",
+          "carType": "定期",
+          "courseNumber": "1",
+          "routeNumber": "1",
+          "isServiceWork": "true",
+          "startTime": "10:20:30:30",
+          "busStopList": [
+            {
+              "name": "JR伊予吉田駅",
+              "kanaName": "ジェーアールイヨヨシダエキ",
+              "longitude": 33.273252,
+              "latitude": 132.544083
+            },
+            {
+              "name": "吉田郵便局",
+              "kanaName": "ヨシダユウビンキョク",
+              "longitude": 33.275865,
+              "latitude": 132.541805
+            },
+            {
+              "name": "吉田支所",
+              "kanaName": "ヨシダシショ",
+              "longitude": 33.279856,
+              "latitude": 132.540676
+            },
+            {
+              "name": "吉田病院前",
+              "kanaName": "ヨシダビョウインマエ",
+              "longitude": 33.282362,
+              "latitude": 132.540538
+            },
+            {
+              "name": "水谷病院前",
+              "kanaName": "ミズタニビョウインマエ",
+              "longitude": 33.287134,
+              "latitude": 132.541927
+            },
+            {
+              "name": "医王寺下",
+              "kanaName": "イオウジシタ",
+              "longitude": 33.289447,
+              "latitude": 132.542029
+            },
+            {
+              "name": "立間小学校前",
+              "kanaName": "タチマショウガッコウマエ",
+              "longitude": 33.291229,
+              "latitude": 132.543004
+            },
+            {
+              "name": "大乗寺前",
+              "kanaName": "ダイジョウジマエ",
+              "longitude": 33.292439,
+              "latitude": 132.547960
+            },
+            {
+              "name": "白井谷",
+              "kanaName": "シライダニ",
+              "longitude": 33.294001,
+              "latitude": 132.550183
+            },
+            {
+              "name": "天神橋",
+              "kanaName": "テンジンバシ",
+              "longitude": 33.297615,
+              "latitude": 132.554394
+            },
+            {
+              "name": "柏木",
+              "kanaName": "カシワギ",
+              "longitude": 33.300037,
+              "latitude": 132.556764
+            },
+            {
+              "name": "八反代",
+              "kanaName": "ヤエシロ",
+              "longitude": 33.308838,
+              "latitude": 132.560278
+            },
+            {
+              "name": "西谷",
+              "kanaName": "ニシタニ",
+              "longitude": 33.308838,
+              "latitude": 132.560747
+            },
+            {
+              "name": "大河内",
+              "kanaName": "オオコウチ",
+              "longitude": 33.312767,
+              "latitude": 132.564905
+            }
+          ]
+        },
+        {
+          "name": "中浦線",
+          "serviceType": "上り",
+          "carType": "定期",
+          "courseNumber": "2",
+          "routeNumber": "2",
+          "isServiceWork": "true",
+          "startTime": "7:00:00:00",
+          "busStopList": [
+            {
+              "name": "JR伊予吉田駅",
+              "kanaName": "ジェーアールイヨヨシダエキ",
+              "longitude": 33.273252,
+              "latitude": 132.544083
+            },
+            {
+              "name": "吉田郵便局",
+              "kanaName": "ヨシダユウビンキョク",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田支所",
+              "kanaName": "ヨシダシショ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田病院前",
+              "kanaName": "ヨシダビョウインマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田公園入口",
+              "kanaName": "ヨシダコウエンイリグチ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "吉田中学校前",
+              "kanaName": "ヨシダチュウガッコウマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "鳥首口",
+              "kanaName": "トリクビグチ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "八幡下",
+              "kanaName": "ヤワタシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "喜佐方農協前",
+              "kanaName": "キサカタノウキョウマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "長畑",
+              "kanaName": "ナガハタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "検校谷",
+              "kanaName": "ケンコウダニ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "大楽寺下",
+              "kanaName": "ダイラクジシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "河内下",
+              "kanaName": "カワウチシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "堂の下",
+              "kanaName": "ドウノシタ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "葱代出荷場前",
+              "kanaName": "ソウダイシュッカバマエ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "貝の浦",
+              "kanaName": "カイノウラ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "堀切",
+              "kanaName": "ホリキリ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "奥の谷",
+              "kanaName": "オクノタニ",
+              "longitude": 0,
+              "latitude": 0
+            },
+            {
+              "name": "中浦集会所前",
+              "kanaName": "ナカウラシュウカイジョマエ",
+              "longitude": 0,
+              "latitude": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

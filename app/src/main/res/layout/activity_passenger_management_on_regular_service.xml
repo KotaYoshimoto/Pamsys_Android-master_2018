@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yamaguchi.pamsys.PassengerManagementOnRegularServiceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 現在の路線 -->
+            <include android:id="@+id/serviceInformationView"
+                layout="@layout/service_information_design"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ServiceInformationTextViews"
+                    android:text="現在の停留所:"
+                    android:textSize="30dp" />
+
+                <Spinner
+                    android:id="@+id/busStopListSpinner"
+                    style="@style/ServiceInformationTextViews"
+                    android:layout_width="350dp"/>
+
+                <Button
+                    android:id="@+id/showNextBusStopButton"
+                    style="@style/ButtonBase"
+                    android:width="150dp"
+                    android:text="次へ"
+                    android:enabled="false"
+                    android:textSize="35dp" />
+
+                <Button
+                    android:id="@+id/voiceGuidButton"
+                    style="@style/ButtonBase"
+                    android:layout_marginHorizontal="65dp"
+                    android:text="アナウンス"
+                    android:textSize="35dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/ServiceInformationTextViews"
+                    android:text="停留所自動設定:"
+                    android:textSize="30dp" />
+
+                <ToggleButton
+                    android:id="@+id/autoSujestToggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#000000">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_span="8"
+                        android:text="乗車人数" />
+                </TableRow>
+
+                <TableRow>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_span="2"
+                        android:text="一般" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_span="2"
+                        android:text="障害者" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_span="3"
+                        android:text="回数券" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_marginBottom="0pt"
+                        android:text="定期券" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="大人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="小人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="大人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="小人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="大人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="小人" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:text="障害者" />
+
+                    <TextView
+                        style="@style/EntrainningTableTextView"
+                        android:layout_marginTop="0pt" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/entrainningCommonAdultEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningCommonChildtEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningHndicappedAdultEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningHndicappedChildEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningCouponAdultEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningCouponChildEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningCouponHandicappedEditText"
+                        style="@style/EntrainningTableEditText" />
+
+                    <EditText
+                        android:id="@+id/entrainningCommuterPassEditText"
+                        style="@style/EntrainningTableEditText" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TableRow android:background="#000000">
+
+                    <TextView
+                        style="@style/PassengerCountTableTextView"
+                        android:layout_span="3"
+                        android:text="乗車中人数" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/addPassengerCountButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0pt"
+                        android:layout_marginVertical="0pt"
+                        android:paddingHorizontal="20dp"
+                        android:text="(＋)"
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/passengerCountEditText"
+                        style="@style/EntrainningTableEditText"
+                        android:layout_width="150dp"
+                        android:hint="0" />
+
+                    <Button
+                        android:id="@+id/dclimentPassengerCountButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="0pt"
+                        android:paddingHorizontal="20dp"
+                        android:text="(ー)"
+                        android:textSize="40dp" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/backButton"
+                    style="@style/ButtonBase"
+                    android:layout_width="200dp"
+                    android:layout_weight="0.3"
+                    android:text="戻る"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <Button
+                    android:id="@+id/couponSaleButton"
+                    style="@style/ButtonBase"
+                    android:layout_width="200dp"
+                    android:layout_weight="0.3"
+                    android:text="回数券販売"
+                    android:textSize="40dp" />
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/finishAnServiceButton"
+                    style="@style/ButtonBase"
+                    android:layout_width="200dp"
+                    android:layout_weight="0.3"
+                    android:text="当便終了"
+                    android:textSize="40dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

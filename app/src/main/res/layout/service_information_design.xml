@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        style="@style/ServiceInformationTextViews"
+        android:text="現在の路線:"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/routeNameTextView"
+        style="@style/ServiceInformationTextViews"
+        android:text="No Data"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/serviceTypeTextView"
+        style="@style/ServiceInformationTextViews"
+        android:text="No Data"
+        android:textSize="35dp" />
+
+    <TextView
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="(第"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/routeNumberTextView"
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="XX"
+        android:textSize="35dp" />
+
+    <TextView
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="便)"
+        android:textSize="35dp" />
+
+
+    <TextView
+        android:id="@+id/carTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:background="#ffff00"
+        android:text="No Data"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="#ffff00"
+        android:text="便"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/courceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:text="No Data"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:text="コース"
+        android:textSize="35dp"/>
+
+    <TextView
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="(第"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/courseNumberTextView"
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="XX"
+        android:textSize="35dp" />
+
+    <TextView
+        style="@style/ServiceInformationTextViews"
+        android:layout_margin="0dp"
+        android:text="便)"
+        android:textSize="35dp" />
+
+
+</LinearLayout>

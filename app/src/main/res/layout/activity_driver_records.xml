@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.example.yamaguchi.pamsys.DriverRecordsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dateTextView"
+            style="@style/ServiceInformationTextViews"
+            android:text="YYYY年mm月dd日(X)"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/ServiceInformationTextViews"
+            android:text="(担当氏名)"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/driverNameTextView"
+            style="@style/ServiceInformationTextViews"
+            android:text="XXX YYY"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/courceTextView"
+            style="@style/ServiceInformationTextViews"
+            android:text="Aコース"
+            android:textSize="40dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- 運賃集計 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3"
+                    android:text="運賃集計" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="一般(大人)" />
+
+                <TextView
+                    android:id="@+id/totalPassengerCommonAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCommonAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="一般(小人)" />
+
+                <TextView
+                    android:id="@+id/totalPassengerCommonChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCommonChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="障害者(大人)" />
+
+                <TextView
+                    android:id="@+id/totalPassengerHandicappedAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashHandicappedAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="障害者(小人)" />
+
+                <TextView
+                    android:id="@+id/totalPassengerHandicappedChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashHandicappedChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="合計" />
+
+                <TextView
+                    android:id="@+id/totalPassengerTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <!-- 空行 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3" />
+            </TableRow>
+
+            <!-- 使用回数券 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3"
+                    android:text="回数券利用集計" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="大人" />
+
+                <TextView
+                    android:id="@+id/totalCouponTicketAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCouponTicketAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="小人" />
+
+                <TextView
+                    android:id="@+id/totalCouponTicketChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCouponTicketChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="障害者" />
+
+                <TextView
+                    android:id="@+id/totalCouponTicketHandicappedTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCouponTicketHandicappedTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="合計" />
+
+                <TextView
+                    android:id="@+id/totalCouponTicketTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalCashCouponTicketTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <!-- 空行 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3" />
+            </TableRow>
+
+            <!-- 回数券販売実績 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3"
+                    android:text="回数券販売実績" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="大人" />
+
+                <TextView
+                    android:id="@+id/soldCouponTicketForAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalSalesForAdultTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="小人" />
+
+                <TextView
+                    android:id="@+id/soldCouponTicketForChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalSalesForChildTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="障害者" />
+
+                <TextView
+                    android:id="@+id/soldCouponTicketForHandicappedTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalSalesForHandicappedTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="合計" />
+
+                <TextView
+                    android:id="@+id/totalCountSoldTicketTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalSalesTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+            <!-- 空行 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:layout_span="3" />
+            </TableRow>
+
+            <!-- 総計 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="総計" />
+
+                <TextView
+                    android:id="@+id/totalCountTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0人" />
+
+                <TextView
+                    android:id="@+id/totalTextView"
+                    style="@style/DriverRecordsTableTextView"
+                    android:text="0円" />
+            </TableRow>
+
+
+        </TableLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/ButtonBase"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="戻る" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/finishServiceButton"
+            style="@style/ButtonBase"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="終了" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:orientation="horizontal">
+
+    <!-- 停車予定リスト画面における，リスト内のレイアウトを定義する -->
+    <TextView
+        android:id="@+id/busStopName"
+        style="@style/ReservationTableDesignTextView"
+        android:text="No Data"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:id="@+id/willGetOnCount"
+        style="@style/ReservationTableDesignTextView"
+        android:layout_weight="1"
+        android:text="XX"/>
+    <TextView
+        android:id="@+id/willGetOffCount"
+        style="@style/ReservationTableDesignTextView"
+        android:layout_weight="1"
+        android:text="XX"/>
+    <CheckBox
+        android:id="@+id/resevationListCheckBox"
+        android:layout_width="30dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:background="#ffffff"
+        android:focusable="false"
+        />
+
+</LinearLayout>

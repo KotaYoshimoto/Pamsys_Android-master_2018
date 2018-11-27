@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.example.yamaguchi.pamsys.ReservationBusStopListActivity">
+
+    <!-- 現在の路線 -->
+    <include android:id="@+id/serviceInformationView"
+        layout="@layout/service_information_design"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="2">
+
+        <!-- 予約表1行目　ダウンロード状態表示，ダウンロードボタン -->
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="予約表"
+                android:textSize="40dp" />
+
+            <TextView
+                android:id="@+id/downloadStateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="　(未ダウンロード)"
+                android:textSize="40dp" />
+
+            <Button
+                android:id="@+id/reservationTableDownloadButton"
+                style="@style/ButtonBase"
+                android:layout_gravity="right"
+                android:text="ダウンロード"
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_span="3"
+        android:background="#000000"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/EntrainningTableEditText"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="停留所"
+            android:textSize="40dp" />
+
+        <TextView
+            style="@style/EntrainningTableTextView"
+            android:layout_weight="1"
+            android:text="乗車予定人数"
+            android:textSize="40dp" />
+
+        <TextView
+            style="@style/PassengerCountTableTextView"
+            android:layout_weight="1"
+            android:text="降車予定人数"
+            android:textSize="40dp" />
+
+        <CheckBox
+            android:id="@+id/resevationListCheckBox"
+            android:layout_width="30dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:enabled="false"
+            android:padding="20dp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/reservationBusStopListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/backButton"
+            style="@style/ButtonBase"
+            android:layout_width="200dp"
+            android:layout_weight="0.3"
+            android:text="戻る"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <Button
+            android:id="@+id/couponSaleButton"
+            style="@style/ButtonBase"
+            android:layout_width="200dp"
+            android:layout_weight="0.3"
+            android:text="回数券販売"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/outOfServiceButton"
+            style="@style/AlartButton"
+            android:layout_width="200dp"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:text="当便運休"
+            android:textSize="40dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/finishAnServiceButton"
+            style="@style/ButtonBase"
+            android:layout_width="200dp"
+            android:layout_weight="0.3"
+            android:text="当便終了"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.yamaguchi.pamsys.ServiceInformationSettingActivity">
+
+    <!-- 本日の運行設定について -->
+    <!-- キーボードが出現した際に，コントロールが隠れることを防ぐため -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:stretchColumns="1"
+            android:background="#000000">
+            <!-- １行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableTitle"
+                    android:layout_span="2"
+                    android:text="本日の運行設定" />
+            </TableRow>
+
+            <!-- ２行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableEven"
+                    android:text="日付" />
+
+                <TextView
+                    android:id="@+id/showDateTextView"
+                    style="@style/TableContent"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:text="" />
+            </TableRow>
+
+            <!-- 3行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableOdd"
+                    android:text="担当者名" />
+
+                <Spinner
+                    android:id="@+id/driverSpinner"
+                    style="@style/TableContent"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <!-- 4行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableEven"
+                    android:text="車両番号" />
+
+                <Spinner
+                    android:id="@+id/carNumberSpinner"
+                    style="@style/TableContent"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <!-- 5行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableOdd"
+                    android:text="コース" />
+
+                <Spinner
+                    android:id="@+id/courceSpinner"
+                    style="@style/TableContent"
+                    android:spinnerMode="dialog" />
+            </TableRow>
+
+            <!-- 6行目 -->
+            <TableRow>
+
+                <TextView
+                    style="@style/TableEven"
+                    android:text="現在の走行距離" />
+
+                <LinearLayout
+                    style="@style/TableContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/mileageEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:gravity="center"
+                        android:hint=""
+                        android:text=""
+                        android:inputType="phone"
+                        android:textSize="35dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+
+                        android:focusableInTouchMode="true"
+                        android:text="(km)"
+
+                        android:textSize="40dp" />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/showPreDriveRecordsButton"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="前回の運行記録"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <!-- 下部のボタンについて -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sendUnreachedDataButton"
+            style="@style/AlartButton"
+            android:layout_width="350dp"
+            android:layout_gravity="center_vertical"
+            android:text="未送信データ送信"
+            android:textSize="40dp"
+            android:enabled="false"/>
+
+        <!-- ボタンを両端に配置するためのブランク -->
+        <View
+            android:layout_height="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+        </View>
+        <Button
+            android:id="@+id/startServiceButton"
+            style="@style/ButtonBase"
+            android:layout_width="350dp"
+            android:layout_gravity="center_vertical"
+            android:text="運行開始"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
