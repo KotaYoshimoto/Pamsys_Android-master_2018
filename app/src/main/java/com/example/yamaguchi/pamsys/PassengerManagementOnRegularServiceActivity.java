@@ -755,7 +755,7 @@ public class PassengerManagementOnRegularServiceActivity extends Activity
 
         String Latitude,Longitude;
         Latitude = String.valueOf(location.getLatitude());
-        Longitude = String.valueOf(location.getLatitude());
+        Longitude = String.valueOf(location.getLongitude());
         Date date = new Date();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd kk:mm:ss.SSS",Locale.JAPAN);
         String locationDate = sdf.format(date);
